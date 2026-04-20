@@ -1,0 +1,20 @@
+using UnityEngine;
+//Sistema de energía del jugador
+public class NewMonoBehaviourScript : MonoBehaviour
+{
+    public int energiaActual = 100;
+    public int costoHabilidad = 30;
+    public int energiaResultante;
+
+
+    void Start()
+    {
+        energiaResultante = energiaActual - costoHabilidad;
+        Debug.Log(energiaResultante);
+    }
+
+    void Update()
+    {
+        
+    }
+}
