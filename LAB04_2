@@ -1,0 +1,27 @@
+using UnityEngine;
+//Verificación de cofre especial
+public class LAB04_2 : MonoBehaviour
+{
+    public bool tieneLlave = true;
+    public bool espacioDisponible = true;
+    public bool abrirCofre;
+
+    void Start()
+    {
+        if (tieneLlave == true && espacioDisponible == true)
+        {
+            abrirCofre = true;
+            Debug.Log("Cofre abierto");
+        }
+        else
+        {
+            abrirCofre = false;
+            Debug.Log("No puedes abrir el cofre");
+        }
+    }
+
+    void Update()
+    {
+        
+    }
+}
